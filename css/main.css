@@ -20,6 +20,14 @@ a:hover {
     text-decoration: underline;
     color: #069;
 }
+nav ul a, footer ul a {
+    text-decoration: none;
+    color: #999;
+}
+nav ul a:hover, footer ul a:hover{
+    text-decoration: underline;
+    color: #069;
+}
 h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
