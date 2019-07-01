@@ -17,7 +17,7 @@ a {
     color: #267cb9;
 }
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
     color: #069;
 }
 nav ul a, footer ul a {
@@ -25,7 +25,7 @@ nav ul a, footer ul a {
     color: #999;
 }
 nav ul a:hover, footer ul a:hover{
-    text-decoration: underline;
+    text-decoration: none;
     color: #069;
 }
 h1 {
