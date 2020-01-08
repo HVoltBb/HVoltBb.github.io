@@ -2,7 +2,7 @@ name: Can Z
 theme: jekyll-theme-minimal
 
    comments:
-      provider: "staticman"
+      provider: "facebook"
    staticman:
        allowedFields          : ['name', 'email', 'url', 'message']
        branch                 : # "master", "gh-pages"
