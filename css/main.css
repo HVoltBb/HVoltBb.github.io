@@ -20,3 +20,6 @@ body {
   min-height: 2000px;
   padding-top: 70px;
 }
+.random > .jumbotron{
+	background-color: #82e0aa;
+}
