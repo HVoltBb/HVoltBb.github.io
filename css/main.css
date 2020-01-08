@@ -10,7 +10,10 @@ footer ul a {
 footer {
     display: inline;
     border-top: 1px solid #d5d5d5;
-    background-color: #0b5345;
+}
+
+#site-footer{
+	background: #0b5345;
 }
 footer p{
     margin-left: 30px;
