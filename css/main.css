@@ -27,3 +27,31 @@ body {
 .white{
 	color: white;
 }
+
+.light-purple{
+    background-color: #f4ecf7;
+}
+
+.light-blue{
+    background-color: #ebf5fb;
+}
+
+.light-green{
+    background-color: #eafaf1;
+}
+
+.gray{
+    background-color: #f9f9f9;
+}
+.section-box{
+    padding-top: 50px;
+    padding-bottom: 45px;
+}
+.section-img{
+    margin: 5%;
+}
+.section-header{
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
