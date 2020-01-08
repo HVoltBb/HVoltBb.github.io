@@ -59,6 +59,5 @@ body {
 }
 
 .some-padding{
-  padding-top:50px;
-  padding-bottom: 50px;
+  margin-top:25px;
 }
