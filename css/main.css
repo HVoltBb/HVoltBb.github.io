@@ -6,11 +6,7 @@ footer ul a {
     text-decoration: none;
 }
 
-footer {
-    display: inline;
-}
-
-.site-footer{
+.this-footer {
   padding: 40px 0;
   color: #999;
   background-color: #f9f9f9;
@@ -22,7 +18,7 @@ footer p{
     margin-right: 30px;
 }
 body {
-  min-height: 2000px;
+  min-height: 1000px;
   padding-top: 70px;
 }
 .random > .jumbotron{
