@@ -4,17 +4,19 @@ footer ul li {
 }
 footer ul a {
     text-decoration: none;
-    color: #999;
 }
 
 footer {
     display: inline;
-    border-top: 1px solid #d5d5d5;
 }
 
 #site-footer{
-	background: #0b5345;
+  padding: 40px 0;
+  color: #999;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e5e5e5;
 }
+
 footer p{
     margin-left: 30px;
     margin-right: 30px;
