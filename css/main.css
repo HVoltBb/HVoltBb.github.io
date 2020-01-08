@@ -26,3 +26,7 @@ body {
 .random > .jumbotron{
 	background-color: #82e0aa;
 }
+
+.white{
+	color: white;
+}
