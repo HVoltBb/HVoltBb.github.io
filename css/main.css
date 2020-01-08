@@ -68,10 +68,11 @@ body {
 }
 
 .canz-style{
-  font-family: Arial sans-serif;
+  font-family: sans-serif;
   color:#D35400;
+  font-size: 105%;
 }
 
 .canz-style-last{
-  font-family: Arial sans-serif;
+  font-family: sans-serif;
 }
