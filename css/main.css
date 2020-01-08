@@ -20,6 +20,11 @@ footer p{
 body {
   padding-top: 70px;
 }
+
+.home-link > li:hover{
+  background-color:#d0d3d4;
+}
+
 .random > .jumbotron{
 	background-color: #82e0aa;
 }
@@ -60,4 +65,13 @@ body {
 
 .some-padding{
   margin-top:25px;
+}
+
+.canz-style{
+  font-family: Times serif;
+  color:#D35400;
+}
+
+.canz-style-last{
+  font-family: Times serif;
 }
