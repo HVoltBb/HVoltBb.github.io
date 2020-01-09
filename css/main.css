@@ -76,3 +76,6 @@ body {
 .canz-style-last{
   font-family: sans-serif;
 }
+.data-box{
+  overflow: auto;
+}
