@@ -42,8 +42,6 @@
     <div class="container">
         {{ content }}
 
-        <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
-
     {% if page.disqus-comments %}
         <div id="disqus_thread"></div>
 <script>
@@ -68,12 +66,12 @@ s.setAttribute('data-timestamp', +new Date());
                             
     {% endif %}
 
-
+<a id="back-to-top" href="#" class="btn btn-primary back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><i class="fa fa-chevron-up"></i></a>
     </div>
     <footer class="this-footer">
         <div id="footer-flexbox">
-            <div class="footer-flexbox-item"><a title="Follow me on ResearchGate" href="https://www.researchgate.net/profile/Can_Zhou3?cp=shp"><img src="https://www.researchgate.net/images/public/profile_share_badge.png" alt="Follow me on ResearchGate" height=auto width=40% /></a></div>
-        <div class="footer-flexbox-item"><a class="btn" href="https://github.com/HVoltBb"><span class="fa fa-github" style="font-size: 150%;"></span><span style="font-size: 80%"> GitHub</span></a></div>
+            <div class="footer-flexbox-item"><a title="Follow me on ResearchGate" href="https://www.researchgate.net/profile/Can_Zhou3?cp=shp"><img src="https://www.researchgate.net/images/public/profile_share_badge.png" alt="Follow me on ResearchGate" height=auto width=50% /></a></div>
+        <div class="footer-flexbox-item"><a class="btn" href="https://github.com/HVoltBb"><span class="fa fa-github" style="font-size: 150%;"></span><span style="font-size: 90%"> GitHub</span></a></div>
         </div>
   </a>
     <p style="text-align: center;">&copy; 2020 Can Zhou &middot; <a href="mailto:eidotog@gmail.com">Contact me</a> &middot; Powered by Jekyll and Bootstrap</p>
@@ -81,9 +79,10 @@ s.setAttribute('data-timestamp', +new Date());
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../bootstrap/js/bootstrap.js"></script>
     <script id="dsq-count-scr" src="//hvoltbb.disqus.com/count.js" async></script>
+    <script type="text/javascript" src="../js/back-to-top.js"></script>
   </body>
 </html>
