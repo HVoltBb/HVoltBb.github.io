@@ -39,15 +39,10 @@ body{
   right: 25px;
   display: none;
   z-index: 99;
-  width: 60px;
-  height:60px;
-  border-radius: 30px;
-  text-align: center;
-  padding: 8px 0px;
 }
 
 .btn-big{
-  font-size: 200%;
+  font-size: 400%;
 }
 
 footer p{
