@@ -35,10 +35,11 @@ body{
 .back-to-top{
   cursor: pointer;
   position: fixed;
-  bottom: 25px;
+  bottom: 84px;
   right: 25px;
   display: none;
   z-index: 99;
+  color: #808b96;
 }
 
 .btn-big{
