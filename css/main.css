@@ -6,11 +6,22 @@ footer ul a {
     text-decoration: none;
 }
 
+/* sticky footer */
+
+html{
+  position: relative;
+  min-height: 100%;
+}
+
+body{
+  margin-bottom: 100px;
+}
+
 .this-footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height:95px;
+  height:100px;
   color: #999;
   padding-top: 3px;
   background-color: #f5f5f5;
@@ -18,10 +29,13 @@ footer ul a {
   font-size: 75%;
 }
 
+/* End */
+
 footer p{
     margin-left: 30px;
     margin-right: 30px;
 }
+
 body {
   padding-top: 70px;
 }
