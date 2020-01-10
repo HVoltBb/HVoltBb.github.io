@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
 
     <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-social.css">
 
     <title>{{ page.title }}</title>
   </head>
@@ -40,6 +42,8 @@
     <div class="container">
         {{ content }}
 
+        <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+
     {% if page.disqus-comments %}
         <div id="disqus_thread"></div>
 <script>
@@ -63,13 +67,16 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
     {% endif %}
+
+
     </div>
     <footer class="this-footer">
-        <ul>
-            <li><a title="Follow me on ResearchGate" href="https://www.researchgate.net/profile/Can_Zhou3?cp=shp"><img src="https://www.researchgate.net/images/public/profile_share_badge.png" alt="Follow me on ResearchGate" /></a></li>
-      <li><a href="https://github.com/HVoltBb">github.com/HVoltBb</a></li>
-        </ul>
-    <p style="text-align: center;">&copy; 2020 Can Zhou &middot; <a href="mailto:eidotog@gmail.com">Contact me</a> &middot; Powered by Jekyll and Bootstrap <span class="pull-right"><a href="#">Back to top</a></span></p>
+        <div id="footer-flexbox">
+            <div class="footer-flexbox-item"><a title="Follow me on ResearchGate" href="https://www.researchgate.net/profile/Can_Zhou3?cp=shp"><img src="https://www.researchgate.net/images/public/profile_share_badge.png" alt="Follow me on ResearchGate" height=auto width=40% /></a></div>
+        <div class="footer-flexbox-item"><a class="btn" href="https://github.com/HVoltBb"><span class="fa fa-github" style="font-size: 150%;"></span><span style="font-size: 80%"> GitHub</span></a></div>
+        </div>
+  </a>
+    <p style="text-align: center;">&copy; 2020 Can Zhou &middot; <a href="mailto:eidotog@gmail.com">Contact me</a> &middot; Powered by Jekyll and Bootstrap</p>
     </footer>
 
     <!-- Optional JavaScript -->
