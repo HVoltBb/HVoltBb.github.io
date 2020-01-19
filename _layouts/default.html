@@ -86,5 +86,10 @@ s.setAttribute('data-timestamp', +new Date());
     <script type="text/javascript" src="../bootstrap/js/bootstrap.js"></script>
     <script id="dsq-count-scr" src="//hvoltbb.disqus.com/count.js" async></script>
     <script type="text/javascript" src="../js/back-to-top.js"></script>
+
+    {% if page.DoMath %}
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    {% endif%}
+    
   </body>
 </html>
