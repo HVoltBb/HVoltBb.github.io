@@ -55,6 +55,11 @@ body {
   padding-top: 70px;
 }
 
+.center-box{
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
 .home-link > li:hover{
   background-color:#d0d3d4;
 }
