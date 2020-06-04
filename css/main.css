@@ -7,13 +7,6 @@ body{
   margin-bottom: 84px;
 }
 
-*{
-  -moz-filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  filter: gray; /* IE6-9 */
-  filter: grayscale(100%);
-}
-
 .this-footer {
   position: absolute;
   bottom: 0;
