@@ -28,6 +28,7 @@
     <title>{{ page.title }}</title>
   </head>
   <body>
+    <div class="content">
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -79,8 +80,6 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
     {% endif %}
-
-<a id="back-to-top" href="#" class="btn back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><i class="fa fa-arrow-circle-up btn-big" aria-hidden="true"></i></a>
     </div>
     <footer class="this-footer">
         <div id="footer-flexbox">
@@ -90,7 +89,11 @@ s.setAttribute('data-timestamp', +new Date());
   </a>
     <p style="text-align: center;">&copy; 2020 Can Z. &middot; Powered by Jekyll and Bootstrap</p>
     </footer>
-
+</div>
+  <div class='others'>
+<a id="back-to-top" href="#" class="btn back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><i class="fa fa-arrow-circle-up btn-big" aria-hidden="true"></i></a>
+  </div>
+  
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
