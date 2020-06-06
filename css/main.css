@@ -1,11 +1,11 @@
 html{
   position: relative;
+  filter: grayscale(100%);
   min-height: 100%;
 }
 
 body{
   padding-bottom: 84px;
-  filter: grayscale(100%);
   min-height: 100vh;
 }
 
