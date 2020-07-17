@@ -6,7 +6,7 @@
     	pageNum = 1,
     	pageRendering = false,
     	pageNumPending = null,
-    	scale = 1,
+    	scale = 1.2,
     	canvas = document.getElementById('cvCanvas'),
     	ctx = canvas.getContext('2d');
 
