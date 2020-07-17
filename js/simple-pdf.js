@@ -1,6 +1,6 @@
 	var pdfjsLib = window['pdfjs-dist/build/pdf'];
 
-	pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.5.207/pdf.worker.js';
+	pdfjsLib.GlobalWorkerOptions.workerSrc = window['pdfjs-dist/build/pdf.worker'];
 
 	var pdfDoc = null,
     	pageNum = 1,
