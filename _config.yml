@@ -1,2 +1,6 @@
 name: Can Z
 theme: jekyll-theme-minimal
+comments:
+  facebook:
+    colorschmeme: "light"
+    order_by: "reverse_time"
