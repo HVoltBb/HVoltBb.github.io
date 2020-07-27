@@ -1,0 +1,1 @@
+$("#poll01").load("./poll01.html");
