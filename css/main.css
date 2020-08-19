@@ -1,6 +1,8 @@
 html{
   position: relative;
+/*  
   filter: grayscale(100%);
+*/
   min-height: 100%;
 }
 
