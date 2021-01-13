@@ -11,10 +11,6 @@ body{
   min-height: 100vh;
 }
 
-.bigger{
-  font-size: 135%;
-}
-
 .this-footer {
   position: absolute;
   bottom: 0;
