@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /pics/
+
+Sitemap: https://hvoltbb.github.io/sitemap.xml
