@@ -5,3 +5,8 @@ _site/
 vendor
 Gemfile.lock
 math.html
+*.py
+__pycache__/
+.ipynb_checkpoints
+*.ipynb
+python/
