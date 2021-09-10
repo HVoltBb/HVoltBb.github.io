@@ -1,5 +1,5 @@
 var len = Object.keys(data).length;
-var text_pre = '<div class="col-sm-6 col-md-4"><div class="thumbnail" style="height= 550px">';
+var text_pre = '<div class="col-sm-6 col-md-4"><div class="thumbnail" style="height: 550px">';
 var text_post = '</div></div></div>';
 var text_cap = '<div class="caption">';
 var text = '';
