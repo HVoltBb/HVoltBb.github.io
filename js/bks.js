@@ -55,6 +55,42 @@ data=
     "cap_p2": "<p><span class=\"label label-success\">Awesome!</span></p>"
   },
   {
+    "img_link": "<img src=\"/pics/book_pianka.jpg\" alt=\"book cover\">",
+    "cap_link": "<h3><a href=\"http://www.zo.utexas.edu/courses/bio373/ERP-EvolEcol.html\">Evolutionary Ecology by E.R. Pianka</a></h3>",
+    "cap_p1": "<p>Best community ecology textbook. The one I read is the 2000 edition. The emphasis is on a conceptual understanding of the ecological processes. There may not be enough math formulae as some of you might want in some of other books, but a conceptual understanding is more important before it can be simplified to some math symbols. </p>",
+    "cap_p2": "<p><span class=\"label label-success\">Awesome!</span></p>"
+  },
+  {
+    "img_link": "<img src=\"/pics/book_js_good.jpeg\" alt=\"book cover\">",
+    "cap_link": "<h3><a href=\"https://www.oreilly.com/library/view/javascript-the-good/9780596517748/\">JavaScript: The Good Parts</a></h3>",
+    "cap_p1": "<p>This is a controversial book. Many like it, but thankfully most don't. I am glad there is no 2nd edition of this book.</p>",
+    "cap_p2": "<p><span class=\"label label-danger\">Yuck!</span></p>"
+  },
+  {
+    "img_link": "<img src=\"/pics/book_js_YDK.jpeg\" alt=\"book cover\">",
+    "cap_link": "<h3><a href=\"https://github.com/getify/You-Dont-Know-JS\">You Don't Know JS Series by Kyle Simpson</a></h3>",
+    "cap_p1": "<p>Kyle hated <i>JavaScript: The Good Parts</i> so much that he wrote this series. Highly recommended. Easy to read and follow. The whole series is available on GitHub as well.</p>",
+    "cap_p2": "<p><span class=\"label label-success\">Awesome!</span></p>"
+  },
+  {
+    "img_link": "<img src=\"/pics/book_matrix_pop_mod.jpg\" alt=\"book cover\">",
+    "cap_link": "<h3><a href=\"https://global.oup.com/academic/product/matrix-population-models-9780878931217?cc=us&lang=en&\">Matrix Population Models</a></h3>",
+    "cap_p1": "<p>For some reason, I have to give this book a top rating. This book is not meant to be read from cover to cover, but as a reference. It has been my go-to reference book when I am working on matrix population models. Whatever your problem, I bet you can find the answer here or at least get a hint at how to solve it.</p>",
+    "cap_p2": "<p><span class=\"label label-success\">Awesome!</span></p>"
+  },
+  {
+    "img_link": "<img src=\"/pics/book_comp_sys.jpg\" alt=\"book cover\">",
+    "cap_link": "<h3><a href=\"http://csapp.cs.cmu.edu/\">Computer Systems: A Programmer's Perspective</a></h3>",
+    "cap_p1": "<p>Easy to read and follow. Make sure you finish the labs portion. The hands-on portion is far more important than the cheap talk.</p>",
+    "cap_p2": "<p><span class=\"label label-success\">Awesome!</span></p>"
+  },
+  {
+    "img_link": "<img src=\"/pics/book_c.jpeg\" alt=\"book cover\">",
+    "cap_link": "<h3><a href=\"https://www.pearson.com/store/p/c-programming-language/P100001672033/9780137460847?creative=543050952131&keyword=&matchtype=b&network=g&device=c&gclid=CjwKCAjwhOyJBhA4EiwAEcJdcaeVAr76f0PqoBRl66YxMTpCo72ufIomRdcAPS0U2xUwU-vQvjAO6xoCuQAQAvD_BwE&gclsrc=aw.ds\">C Programming Language, 2nd edition</a></h3>",
+    "cap_p1": "<p>A must have if you ever code in C. A bible doesn't have to be long. It has only 272 pages. Clear and to-the-point writing. </p>",
+    "cap_p2": "<p><span class=\"label label-success\">Awesome!</span></p>"
+  },
+  {
     "img_link": "<img src=\"/pics/#\" alt=\"book cover\">",
     "cap_link": "<h3><a href=\"#\">...</a></h3>",
     "cap_p1": "<p>...</p>",
