@@ -22,6 +22,17 @@ hidden: true
 <p><span class="label label-danger">Yuck!</span> When in red, you know it's bad!</p>
 <p>This is a private list, in the sense that it is configured such that Google or any other ethical search engine does not index this page. You must have gone through the source code to access this page. Anyway, I do collect your connection info as well, so we are even in some sense.</p>
 <hr>
+<div class="btn-group" role="group" aria-label="choose a subject">
+    <button type="button" class="btn btn-default" onclick="subject('all')">all</button>
+    <button type="button" class="btn btn-default" onclick="subject('Biz')">biz</button>
+    <button type="button" class="btn btn-default" onclick="subject('Ecol')">ecol</button>
+    <button type="button" class="btn btn-default" onclick="subject('Econ')">econ</button>
+    <button type="button" class="btn btn-default" onclick="subject('Math')">math</button>
+    <button type="button" class="btn btn-default" onclick="subject('Stats')">stats</button>
+    <button type="button" class="btn btn-default" onclick="subject('Tech')">tech</button>
+</div>
+
 <div class="row" id="book_shelf"></div>
 <script type="text/javascript" src="/js/bks.js"></script>
 <script type="text/javascript" src="/js/write-books.js"></script>
+<script type="text/javascript" src="/js/picksub.js"></script>
