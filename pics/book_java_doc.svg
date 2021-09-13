@@ -3,6 +3,8 @@
         .title { font: italic 24px serif; fill: red;}
     </style>
 
+    <rect x="5" y="5" width="240" height="290" stroke="gray" fill="transparent" stroke-width="2"/>
+
     <text class='title' text-anchor='middle'>
         <tspan x="50%" y="35%">The Java&#174; Language</tspan>
         <tspan x="50%" y="35%" dy="1.2em">Specification</tspan>

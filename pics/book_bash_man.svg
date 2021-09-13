@@ -2,6 +2,6 @@
     <style>
         .title { font: italic 24px serif; }
     </style>
-
+    <rect x="5" y="5" width="240" height="290" stroke="gray" fill="transparent" stroke-width="2"/>
     <text x="50%" y="35%" class='title' text-anchor='middle'>GNU Bash Manual</text>
 </svg>
