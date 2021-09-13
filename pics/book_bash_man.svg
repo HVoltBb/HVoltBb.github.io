@@ -1,0 +1,7 @@
+<svg vewBox="0 0 250 300" height="300" width="250" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .title { font: italic 24px serif; }
+    </style>
+
+    <text x="50%" y="35%" class='title' text-anchor='middle'>GNU Bash Manual</text>
+</svg>

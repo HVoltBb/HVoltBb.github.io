@@ -1,0 +1,10 @@
+<svg vewBox="0 0 250 300" height="300" width="250" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .title { font: italic 24px serif; fill: red;}
+    </style>
+
+    <text class='title' text-anchor='middle'>
+        <tspan x="50%" y="35%">The Java&#174; Language</tspan>
+        <tspan x="50%" y="35%" dy="1.2em">Specification</tspan>
+    </text>
+</svg>

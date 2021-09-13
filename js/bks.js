@@ -167,5 +167,19 @@ data=
     "cap_p1": "<p>The go to source for GAMs. I know the <i>mgcv</i> package is handy and you can do most of the analysis without knowing much about GAM. This is the beauty of abstraction, but that does not render this book useless. Highly recommended.</p>",
     "cap_p2": "<p><span class=\"label label-success\">Awesome!</span></p>",
     "sub": "Stats"
+  },
+  {
+    "img_link": "<img src=\"/pics/bookx_bash_man.png\" alt=\"book cover\">",
+    "cap_link": "<h3><a href=\"https://www.gnu.org/software/bash/manual/\">GNU Bash Manual</a></h3>",
+    "cap_p1": "<p>GNU Bash manual. </p>",
+    "cap_p2": "<p><span class=\"label label-success\">Awesome!</span></p>",
+    "sub": "Tech"
+  },
+  {
+    "img_link": "<img src=\"/pics/bookx_java_doc.png\" alt=\"book cover\">",
+    "cap_link": "<h3><a href=\"https://docs.oracle.com/javase/specs/jls/se8/html/index.html\">The Java Language Specification</a></h3>",
+    "cap_p1": "<p>Java SE 8 documentation.</p>",
+    "cap_p2": "<p><span class=\"label label-success\">Awesome!</span></p>",
+    "sub": "Tech"
   }
 ]
