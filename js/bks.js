@@ -181,5 +181,12 @@ data=
     "cap_p1": "<p>Java SE 8 documentation.</p>",
     "cap_p2": "<p><span class=\"label label-success\">Awesome!</span></p>",
     "sub": "Tech"
+  },
+  {
+    "img_link": "<img src=\"/pics/bookx_date_db_in_depth.png\" alt=\"book cover\">",
+    "cap_link": "<h3><a href=\"https://www.oreilly.com/library/view/database-in-depth/0596100124/\">Database in Depth</a></h3>",
+    "cap_p1": "<p>A relatively short book on relational data model (~200 pages). You won't get much insight from it, but meanwhile won't waste too much time reading it either. There is too much cheap discussion that doesn't offer much practical value. Arguing for the sake of arguing. Some of Date's ideas diverge from those of Codd's. This style of writing or ranting or criticism is unlikely to produce a 2nd edition of this book.</p>",
+    "cap_p2": "<p><span class=\"label label-danger\">Yuck!</span></p>",
+    "sub": "Tech"
   }
 ]
