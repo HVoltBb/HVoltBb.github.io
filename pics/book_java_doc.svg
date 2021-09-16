@@ -1,6 +1,6 @@
 <svg vewBox="0 0 250 300" height="300" width="250" xmlns="http://www.w3.org/2000/svg">
     <style>
-        .title { font: italic 24px serif; fill: red;}
+        .title { font: italic 20px serif; fill: red;}
     </style>
 
     <rect x="5" y="5" width="240" height="290" stroke="gray" fill="transparent" stroke-width="2"/>
