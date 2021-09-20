@@ -185,8 +185,22 @@ data=
   {
     "img_link": "<img src=\"/pics/bookx_date_db_in_depth.png\" alt=\"book cover\">",
     "cap_link": "<h3><a href=\"https://www.oreilly.com/library/view/database-in-depth/0596100124/\">Database in Depth</a></h3>",
-    "cap_p1": "<p>A relatively short book on relational data model (~200 pages). You won't get much insight from it, but meanwhile won't waste too much time reading it either. There is too much cheap discussion that doesn't offer much practical value. Arguing for the sake of arguing. Some of Date's ideas diverge from those of Codd's. This style of writing or ranting or criticism is unlikely to produce a 2nd edition of this book.</p>",
+    "cap_p1": "<p>A relatively short book on relational data model (~200 pages). You won't get much insight from it, but meanwhile won't waste too much time reading it either. There is too much cheap discussion that doesn't offer much practical value. Arguing for the sake of arguing. Some of Date's ideas diverge from those of Codd's. This style of writing, ranting or criticism is unlikely to produce a 2nd edition of this book.</p>",
     "cap_p2": "<p><span class=\"label label-danger\">Yuck!</span></p>",
     "sub": "Tech"
+  },
+  {
+    "img_link": "<img src=\"/pics/bookx_teleost.png\" alt=\"book cover\">",
+    "cap_link": "<h3><a href=\"https://www.springer.com/us/book/9780412845901\">Ecology of Teleost Fishes by Wootton</a></h3>",
+    "cap_p1": "<p>The publisher summarized it well that this book 'offers a thorough and integrated approach to the area and is essential reading for all students of fish biology and ecology, fisheries science and aquaculture.' I don't think it is intended to be read from cover to cover. It has useful material for your introduction and/or discussion sections.</p>",
+    "cap_p2": "<p><span class=\"label label-success\">Awesome!</span></p>",
+    "sub": "Ecol"
+  },
+  {
+    "img_link": "<img src=\"/pics/bookx_fish_pop.png\" alt=\"book cover\">",
+    "cap_link": "<h3><a href=\"https://www.springer.com/us/book/9780412549601\">On the Dynamics of Exploited Fish Populations</a></h3>",
+    "cap_p1": "<p>Great ideas never get old. Arguably the most important literature on fish population modelling.</p>",
+    "cap_p2": "<p><span class=\"label label-success\">Awesome!</span></p>",
+    "sub": "Ecol"
   }
 ]
