@@ -202,5 +202,12 @@ data=
     "cap_p1": "<p>Great ideas never get old. Arguably the most important literature on fish population modelling.</p>",
     "cap_p2": "<p><span class=\"label label-success\">Awesome!</span></p>",
     "sub": "Ecol"
+  },
+  {
+    "img_link": "<img src=\"/pics/bookx_writing.png\" alt=\"book cover\">",
+    "cap_link": "<h3><a href=\"#\">Unknown!!!</a></h3>",
+    "cap_p1": "<p>This is an awesome book on technical writing. I have read many such book, but none is as good as this one. The version I read is the 9th edition. It is not the most recent edition, but a much cheaper copy. The fact this book has so many editions is telling you how wonderful it is. I am a bit hesitant to show the name of the book because it is SO GOOD. I will show it later, eventually.</p>",
+    "cap_p2": "<p><span class=\"label label-success\">Awesome!</span></p>",
+    "sub": "Misc"
   }
 ]
