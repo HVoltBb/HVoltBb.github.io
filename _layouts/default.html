@@ -128,6 +128,15 @@ s.setAttribute('data-timestamp', +new Date());
       addClass("content", " deselect");
     </script>
     {% endif %}
+
+    {% if page.imageMap %}
+    <script type="text/javascript" src="/js/jquery.rwdImageMaps.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(e) {
+      $('img[usemap]').rwdImageMaps();
+    });
+    </script>
+    {% endif%
     
   </body>
 </html>
