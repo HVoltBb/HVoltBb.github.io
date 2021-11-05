@@ -236,6 +236,13 @@ data=
     "cap_link": "<h3><a href=\"https://www.routledge.com/An-Introduction-to-the-Bootstrap/Efron-Tibshirani/p/book/9780412042317\">An Introduction to the Bootstrap</a></h3>",
     "cap_p1": "<p>It's the small things not big ass formulas that make this book awesome.</p>",
     "cap_p2": "<p><span class=\"label label-success\">Awesome!</span></p>",
-    "sub": "Math"
+    "sub": "Stats"
+  },
+  {
+    "img_link": "<img src=\"/pics/bookx_climate.png\" alt=\"book cover\">",
+    "cap_link": "<h3><a href=\"https://www.elsevier.com/books/atmosphere-ocean-and-climate-dynamics/marshall/978-0-08-055670-3\">Atmosphere, Ocean and Climate Dynamics</a></h3>",
+    "cap_p1": "<p>Introductory text on climate dynamics.</p>",
+    "cap_p2": "<p><span class=\"label label-warning\">Good</span></p>",
+    "sub": "Misc"
   }
 ]
