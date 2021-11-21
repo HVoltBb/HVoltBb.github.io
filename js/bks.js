@@ -3,8 +3,8 @@ data=
   {
     "img_link": "<img src=\"/pics/bookx_l_sql.png\" alt=\"book cover\">",
     "cap_link": "<h3><a href=\"https://www.oreilly.com/library/view/learning-sql-3rd/9781492057604/\">Learning SQL by Alan Beaulieu</a></h3>",
-    "cap_p1": "<p>Nice introductory SQL book to prepare you in the direction of data science.</p>",
-    "cap_p2": "<p><span class=\"label label-primary\">Reading</span></p>",
+    "cap_p1": "<p>OK book on SQL. Like most books on SQL, important concepts are described rather than defined. You may still need to read the official documentation after all.</p>",
+    "cap_p2": "<p><span class=\"label label-warning\">Good</span></p>",
     "sub": "Tech"
   },
   {
@@ -215,6 +215,34 @@ data=
     "cap_link": "<h3><a href=\"https://www.paulbolstad.net/gisbook.html\">GIS fundamentals</a></h3>",
     "cap_p1": "<p>Supposed to be good</p>",
     "cap_p2": "<p><span class=\"label label-primary\">Reading</span></p>",
+    "sub": "Misc"
+  },
+  {
+    "img_link": "<img src=\"/pics/bookx_lightness.png\" alt=\"book cover\">",
+    "cap_link": "<h3><a href=\"https://en.wikipedia.org/wiki/The_Unbearable_Lightness_of_Being\">The Unbearable Lightness of Being</a></h3>",
+    "cap_p1": "<p>Read this book after seeing the movie. Highly recommended, both the book and the movie</p>",
+    "cap_p2": "<p><span class=\"label label-success\">Awesome!</span></p>",
+    "sub": "Misc"
+  },
+  {
+    "img_link": "<img src=\"/pics/bookx_css.png\" alt=\"book cover\">",
+    "cap_link": "<h3><a href=\"https://www.manning.com/books/css-in-depth\">CSS in Depth</a></h3>",
+    "cap_p1": "<p>Supposed to be good</p>",
+    "cap_p2": "<p><span class=\"label label-primary\">Reading</span></p>",
+    "sub": "Tech"
+  },
+  {
+    "img_link": "<img src=\"/pics/bookx_boot.png\" alt=\"book cover\">",
+    "cap_link": "<h3><a href=\"https://www.routledge.com/An-Introduction-to-the-Bootstrap/Efron-Tibshirani/p/book/9780412042317\">An Introduction to the Bootstrap</a></h3>",
+    "cap_p1": "<p>It's the small things not big ass formulas that make this book awesome.</p>",
+    "cap_p2": "<p><span class=\"label label-success\">Awesome!</span></p>",
+    "sub": "Stats"
+  },
+  {
+    "img_link": "<img src=\"/pics/bookx_climate.png\" alt=\"book cover\">",
+    "cap_link": "<h3><a href=\"https://www.elsevier.com/books/atmosphere-ocean-and-climate-dynamics/marshall/978-0-08-055670-3\">Atmosphere, Ocean and Climate Dynamics</a></h3>",
+    "cap_p1": "<p>Introductory text on climate dynamics.</p>",
+    "cap_p2": "<p><span class=\"label label-warning\">Good</span></p>",
     "sub": "Misc"
   }
 ]
