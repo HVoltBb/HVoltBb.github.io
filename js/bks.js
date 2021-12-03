@@ -248,8 +248,8 @@ data=
   {
     "img_link": "<img src=\"/pics/bookx_gnumake.png\" alt=\"book cover\">",
     "cap_link": "<h3><a href=\"https://www.oreilly.com/library/view/managing-projects-with/0596006101/\">Managing Projects with GNU Make, 3rd Edition</a></h3>",
-    "cap_p1": "<p>Typos do run rampant, and here is <a href='https://www.oreilly.com/catalog/errata.csp?isbn=9780596006105' target='_blank'>the errata page</a>. Everything seems to be linked to everything else. To fully understand this book, you may need to read it twice just as make would its Makefile.</p>",
-    "cap_p2": "<p><span class=\"label label-primary\">Reading</span></p>",
+    "cap_p1": "<p>Here is <a href='https://www.oreilly.com/catalog/errata.csp?isbn=9780596006105' target='_blank'>the errata page</a>. A total waste of time.</p>",
+    "cap_p2": "<p><span class=\"label label-danger\">Yuck!</span></p>",
     "sub": "Tech"
   }
 ]
