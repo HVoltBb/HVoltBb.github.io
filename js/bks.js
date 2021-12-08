@@ -248,8 +248,15 @@ data=
   {
     "img_link": "<img src=\"/pics/bookx_gnumake.png\" alt=\"book cover\">",
     "cap_link": "<h3><a href=\"https://www.oreilly.com/library/view/managing-projects-with/0596006101/\">Managing Projects with GNU Make, 3rd Edition</a></h3>",
-    "cap_p1": "<p>Here is <a href='https://www.oreilly.com/catalog/errata.csp?isbn=9780596006105' target='_blank'>the errata page</a>. A total waste of time.</p>",
-    "cap_p2": "<p><span class=\"label label-danger\">Yuck!</span></p>",
+    "cap_p1": "<p>Here is <a href='https://www.oreilly.com/catalog/errata.csp?isbn=9780596006105' target='_blank'>the errata page</a>. Definitely Not an introductory book. Not well organized.</p>",
+    "cap_p2": "<p><span class=\"label label-warning\">Good</span></p>",
+    "sub": "Tech"
+  },
+  {
+    "img_link": "<img src=\"/pics/bookx_autotools.png\" alt=\"book cover\">",
+    "cap_link": "<h3><a href=\"https://nostarch.com/autotools.htm\">Autotools</a></h3>",
+    "cap_p1": "<p>So far so good.</p>",
+    "cap_p2": "<p><span class=\"label label-primary\">Reading</span></p>",
     "sub": "Tech"
   }
 ]
