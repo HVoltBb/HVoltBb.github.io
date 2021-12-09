@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Linking Intel MLK to R
+title: Linking Intel MKL to R
 DoMath: false
 disqus-comments: true
 fb-comments: false
@@ -8,7 +8,7 @@ describe: true
 description: Dynamicaly link Intel oneAPI Math Kernel Library (MKL) to R to make R run faster
 ---
 
-<h2>FastR with Intel MLK</h2>
+<h2>FastR with Intel MKL</h2>
 <p>
     Follow the instructions here => <a href="https://www.intel.com/content/www/us/en/developer/articles/technical/quick-linking-intel-mkl-blas-lapack-to-r.html">Quick Linking MKL to R</a>.
 </p>
@@ -34,5 +34,5 @@ description: Dynamicaly link Intel oneAPI Math Kernel Library (MKL) to R to make
     To see whether this makes any difference, try benchmarking it (<a href="https://mac.r-project.org/benchmarks/">R-benchmark-25</a>). On my old 4th gen intel Core i7 laptop, MKL scored <b>4.8</b> secs while the default library scored <b>38</b> secs.
 </p>
 <p>
-    There has been a time when Intel intentionally crippled the code generation on AMD processors. But I believe it is not the case now. At least it is not as obvious as it used to be, so if you have an AMD processor, feel free to upgrade as well.
+    There has been a time when Intel intentionally crippled code generation on AMD processors. But I believe it is not the case now. At least it is not as obvious as it used to be, so if you have an AMD processor, feel free to upgrade as well.
 </p>
