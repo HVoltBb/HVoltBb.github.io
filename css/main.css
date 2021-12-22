@@ -146,18 +146,17 @@ img[usemap] {
 }
 
 .skip-to-content-link {
-  background: orange;
-  color: red;
-  padding: 0.2rem 1.2rem;
-  border-radius: 0.5rem;
   position: absolute;
   transform: translateY(-200%);
-  transition: transform 300ms ease-in;
 }
 
 .skip-to-content-link:focus {
-  transform: translateY(0);
+  padding: 0.2rem 1.2rem;
+  border-radius: 0.5rem;
+  background: orange;
   color: white;
+  transform: translateY(0);
+  transition: transform 300ms ease-in;
 }
 
 .tag {
