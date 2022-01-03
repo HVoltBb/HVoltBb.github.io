@@ -5,13 +5,15 @@ describe: true
 deselect: true
 description: Advanced tools, data and blog posts on the analysis of natural and built systems
 ---
-<div class="text-center" style="overflow: hidden;">
+</div> <!-- not a bug -->
+<div class="container-fluid">
   <figure>
-    <img src="/pics/new_year.png" class="figure-img img-fluid shadowy wide-screen" alt="A shy albatross fighting a black-browed albatross for food">
+    <img src="/pics/new_year.png" class="figure-img img-fluid shadowy wide-screen" alt="Merry Christmas and happy new year 2022">
     <figcaption class="figure-caption text-right">Image by <a href="https://pixabay.com/users/kinggodarts-20322799/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6590889">sumit kumar</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6590889">Pixabay</a></figcaption>
   </figure>
 </div>
 
+<div class="container">
 <div class="jumbotron some-padding">
 <h2>"In God we trust. All others must bring data."</h2>
 <p>-W.E.D.</p>
@@ -69,6 +71,7 @@ description: Advanced tools, data and blog posts on the analysis of natural and 
   </div>
 </div>
 </div>
+
 <div class="tag" id="main-content"></div>
 <div class="container-fluid">
 <div class="row section-box">
@@ -86,7 +89,7 @@ description: Advanced tools, data and blog posts on the analysis of natural and 
 </div>
 </div>
 
-<div class="container">
+<div class="container"> <!-- this div does not close here. not a bug -->
 <div class="jumbotron some-padding">
 <p>Based on observed data. I use scientific programming tools <a href="https://www.r-project.org">R</a>, and also generic ones, such as C, Java and Python, to perform data analysis. The specific tool I choose for a project largely depends on the existing code base, since I am lazy and not a fan of repetition.</p>
 <p>You can find my softwares listed under <a href="/projects">projects</a>. All of them are open source and hosted on GitHub. I also have generated a thin collection of datasets in research. Some of them may be useful to you, and they are listed under the <a href="/data" >data</a> folder.</p>

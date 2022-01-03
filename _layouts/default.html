@@ -34,7 +34,7 @@
     <title>{{ page.title }}</title>
   </head>
   <body>
-    <div class="content">
+    <div class="content" id = "content">
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -58,33 +58,32 @@
       </div>
     </nav>
 
-    <div class="container" id = "content">
+    <div class="container">
         {{ content }}
 <!--
 <div style="height: 2000px; border: solid 2px red;"></div>
 -->
     {% if page.disqus-comments %}
         <div id="disqus_thread"></div>
-<script>
+    <script>
 
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
-var disqus_config = function () {
-this.page.url = "{{site.url}}{{page.url}}";  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = "{{page.uiv}}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
+    var disqus_config = function () {
+    this.page.url = "{{site.url}}{{page.url}}";  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = "{{page.uiv}}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
 
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://hvoltbb.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                            
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://hvoltbb.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>               
     {% endif %}
 
     {% if page.fb-comments %}
@@ -93,7 +92,8 @@ s.setAttribute('data-timestamp', +new Date());
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&autoLogAppEvents=1&version=v7.0&appId=920660475118567" nonce="jG9vnBTq"></script>
     {% endif %}
 
-    </div>
+    </div> <!-- End of contener div -->
+
     <footer class="this-footer">
         <div id="footer-flexbox">
             <div class="footer-flexbox-item"><a title="Follow me on ResearchGate" href="https://www.researchgate.net/profile/Can_Zhou3?cp=shp"><img src="https://www.researchgate.net/images/public/profile_share_badge.png" alt="Follow me on ResearchGate" height=auto width=50% /></a></div>
@@ -102,7 +102,8 @@ s.setAttribute('data-timestamp', +new Date());
   </a>
     <p style="text-align: center;">&copy; 2021 Can Z. &middot; Powered by Jekyll and Bootstrap &middot; We Live We Love We Lie &middot; <a href="https://github.com/HVoltBb/HVoltBb.github.io/blob/master/README.md">Terms and conditions</a></p>
     </footer>
-</div>
+</div> <!-- End of content div -->
+
   <div class='others'>
 <a id="back-to-top" href="#" class="btn back-to-top" role="button" title="Take me to the top" data-toggle="tooltip" data-placement="left"><i class="fa fa-arrow-circle-up btn-big" aria-hidden="true"></i></a>
   </div>
