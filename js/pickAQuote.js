@@ -3,6 +3,7 @@ function pickAQuote(num=0){
     document.getElementById('quote').innerHTML = text;    
 }
 
-d = new Date();
+d = Date.now();
 var n = quotes_.length;
-pickAQuote(d.getDay()%n);
+// A simple linear conguential RNG that changes daily
+pickAQuote((d*6+89)%n);
