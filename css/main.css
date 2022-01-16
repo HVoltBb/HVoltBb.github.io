@@ -165,7 +165,7 @@ img[usemap] {
 }
 
 .wide-screen {
-  max-width: 100%;
+  max-width: 99%;
   max-height: 100vh;
 }
 
