@@ -213,7 +213,22 @@ button.copy-button {
 }
 
 .container a[href*="//"]::after {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: " \f35d";
+  background: url("/pics/external-link-alt-solid.svg") no-repeat top right /1rem;
+  content: "";
+  padding-left: 1.3rem;
+  filter: opacity(70%);
+}
+
+@media print {
+  body{
+    display: none !important
+  }
+
+  html::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    font-size:large;
+    white-space: pre-wrap;
+    content: "Just a friendly reminder:\A\A Each day, 80k acres of forests are disappearing ...\A \f1bb\f1bb\f1bb\A\f1bb\f1bb\A\f1bb\A\A So think about that when you are trying to print something next time.";
+  }
 }

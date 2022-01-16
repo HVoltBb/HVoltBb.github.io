@@ -1,4 +1,4 @@
-window.onload = function(){
+window.addEventListener("load", function(){
 let copybtn = document.getElementsByClassName("copy-button");
 
 Array.prototype.forEach.call(copybtn, x => {
@@ -9,4 +9,4 @@ Array.prototype.forEach.call(copybtn, x => {
     setTimeout(() => x.nextElementSibling.innerText="", 1000);
   })
 })
-}
+}, false);
