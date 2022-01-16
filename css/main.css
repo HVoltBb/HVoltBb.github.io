@@ -172,3 +172,48 @@ img[usemap] {
 .quote-font {
   font-family: 'Josefin Sans', sans-serif;
 }
+
+pre {
+padding: 0;
+position: relative;
+border: 0;
+border-radius: 6px;;
+}
+
+pre[rel]:not([rel=""]):before {
+  position: absolute;
+  font-size: 1.2rem;
+  content: attr(rel);
+  top: 0.5rem;
+  right: 4rem;
+  color: orange;
+}
+
+.show {
+  display: block;
+}
+
+button.copy-button {
+  color: #f9f9f9;
+  position: absolute;
+  display: inline-block;
+  right: 0.4rem;
+  top: 0.4rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.copy-button-msg {
+  color:#f9f9f9;
+  position: absolute;
+  display: inline-block;
+  right: 0.4rem;
+  top: 3rem;
+}
+
+.container a[href*="//"]::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: " \f35d";
+}
