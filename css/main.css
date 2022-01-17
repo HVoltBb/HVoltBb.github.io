@@ -219,12 +219,14 @@ button.copy-button {
   filter: opacity(70%);
 }
 
-.hidden {
-  display: none;
+@media screen {
+  .doNotPrintMsg{
+    display: none !important;
+  }
 }
 
 @media print {
-  body>*:not(:last-child){
+  body>*:not(.doNotPrintMsg){
     display: none !important
   }
 
@@ -233,12 +235,8 @@ button.copy-button {
     padding-top: 8%;
   }
 
-  body:last-child::before{
-    display: block;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
+  .doNotPrintMsg{
+    display: block !important;
     font-size:large;
-    white-space: pre-wrap;
-    content: "Just a friendly reminder:\A\A Each day, 80k acres of forests are disappearing ...\A \f1bb\f1bb\f1bb\A\f1bb\f1bb\A\f1bb\A\A So think about that when you are trying to print something next time.";
   }
 }
