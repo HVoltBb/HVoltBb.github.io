@@ -224,6 +224,11 @@ button.copy-button {
     display: none !important
   }
 
+  html{
+    padding-left:8%;
+    padding-top:8%;
+  }
+
   html::after{
     font-family: "Font Awesome 5 Free";
     font-weight: 700;
