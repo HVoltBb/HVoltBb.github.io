@@ -57,3 +57,18 @@ With $u^Tu=1$,
 $$
 \boldsymbol{H} = \boldsymbol{I} - 2 u u^T.
 $$
+
+### Hadamard matrices
+$$
+H_2 = \frac{1}{\sqrt{2}}\left[ \begin{matrix} 1 & 1 \\ 1 & -1 \end{matrix}\right]
+$$
+
+### Haar (wavelet) matrices
+$$
+W_4 = \left[\begin{matrix}1 & 1 & 1 & 0\\
+						  1 & 1 & -1 & 0\\
+						  1 & -1 & 0 & 1\\
+						  1 & -1 & 0 & -1\end{matrix}\right]
+$$
+
+### Eigenvectors of symmetric matrices and orthogonal matrices
