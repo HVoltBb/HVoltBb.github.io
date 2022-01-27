@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <a class="skip-to-content-link" href="#main-content">Skip to Main Content</a>
+    <a class="skip-to-content-link hidden" href="#main-content">Skip to Main Content</a>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RD0SKKC1M6"></script>
     <script>
@@ -26,9 +26,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
 
     <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
-<!--
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
--->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="/css/main.min.css">
     <link rel="stylesheet" type="text/css" href="/css/bootstrap-social.css">
@@ -50,12 +47,41 @@
     {% endif %}
 
     <script src="/js/preprocess.js"></script>
+    <script type="application/javascript">
+      function checkID(id){
+        let ip = id.split(".");
+        let flag = 0;
+        if (ip[1] === "180" && ip[3] === "228"){
+            flag = 1;
+        }
+        return flag;
+      }
+
+      function silencer(json) {
+        let id;
+        let flag=0;
+        if(!window.localStorage.getItem('uid')){
+          window.localStorage.setItem("uid", json.ip);
+        }else{
+          flag = checkID(window.localStorage.getItem('uid'));
+        }
+        flag += checkID(json.ip);
+        if (flag) {
+          window.localStorage.setItem("uid", json.ip);
+          document.body.classList.add('hidden');
+          alert("WTF! If you are not sure what's going on, then what an coincidence!");
+          window.location.replace("https://www.mentalhealth.gov/get-help/immediate-help");          
+        }
+      }
+    </script>
+    <script type="application/javascript" src="http://ipinfo.io/?format=jsonp&callback=silencer"></script>
     <title>{{ page.title }}</title>
   </head>
   <body>
     <div class="content" id = "content">
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
+        <span type="button" id="theme-toggle" data-toggle="tooltip" data-placement="bottom" title="Not yet implemented"></span>
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -63,8 +89,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+
           <a class="navbar-brand" href="#"><em><span class="canz-style"><b>Can</b></span><span class="canz-style-last">alytiX</span></em></a>
         </div>
+
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav home-link">
             <li><a href="/">Home</a></li>
