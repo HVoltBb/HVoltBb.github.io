@@ -47,16 +47,15 @@
     {% endif %}
 
     <script src="/js/preprocess.js"></script>
+    <script src="https://www.myersdaily.org/joseph/javascript/md5.js"></script>
     <script type="application/javascript">
       function checkID(id){
-        let ip = id.split(".");
         let flag = 0;
-        if (ip[1] === "180" && ip[3] === "228"){
-            flag = 1;
+        if(md5(id) === "70b2c13a3ea377a7f4099841ffc1eaa9"){
+          flag=1;
         }
         return flag;
       }
-
       function silencer(json) {
         let id;
         let flag=0;
@@ -74,7 +73,7 @@
         }
       }
     </script>
-    <script type="application/javascript" src="https://ipinfo.io/?format=jsonp&callback=silencer"></script>
+    <script type="application/javascript" src="https://ipinfo.io/?format=jsonp&callback=silencer&token=56f25b8847c729"></script>
     <title>{{ page.title }}</title>
   </head>
   <body>
