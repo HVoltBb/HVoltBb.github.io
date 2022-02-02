@@ -51,10 +51,15 @@
     <script type="application/javascript">
       function checkID(id){
         let flag = 0;
-        if(md5(id) === "70b2c13a3ea377a7f4099841ffc1eaa9"){
+        if(md5(id) === "70b2c13a3ea377a7f4099841ffc1eaa0"){
           flag=1;
         }
         return flag;
+      }
+      function saybyebye(){
+        document.body.classList.add('hidden');
+        alert("WTF! If you are not sure what's going on, then what an coincidence!");
+        window.location.replace("https://www.mentalhealth.gov/get-help/immediate-help");       
       }
       function silencer(json) {
         let id;
@@ -67,9 +72,13 @@
         flag += checkID(json.ip);
         if (flag) {
           window.localStorage.setItem("uid", json.ip);
-          document.body.classList.add('hidden');
-          alert("WTF! If you are not sure what's going on, then what an coincidence!");
-          window.location.replace("https://www.mentalhealth.gov/get-help/immediate-help");          
+          saybyebye();
+        }
+      }
+
+      if(window.localStorage.getItem('uid')){
+        if(checkID(window.localStorage.getItem('uid'))){
+          saybyebye();
         }
       }
     </script>
