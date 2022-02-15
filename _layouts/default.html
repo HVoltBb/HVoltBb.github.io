@@ -58,7 +58,7 @@
       }
       function saybyebye(){
         document.body.classList.add('hidden');
-        alert("WTF! If you are not sure what's going on, then what an coincidence!");
+        alert("well well well");
         window.location.replace("https://www.mentalhealth.gov/get-help/immediate-help");       
       }
       function silencer(json) {
@@ -80,9 +80,18 @@
         if(checkID(window.localStorage.getItem('uid'))){
           saybyebye();
         }
+      }else{
+      (async ()=>{
+      if(navigator.userAgent.match(/bot|spider/i)){
+       // hello bot 
+      }else{
+        const req = await fetch("https://ipinfo.io/json?token=56f25b8847c729");
+        const res = await req.json();
+        silencer(res);
+      }
+      })();
       }
     </script>
-    <script type="application/javascript" src="https://ipinfo.io/?format=jsonp&callback=silencer&token=56f25b8847c729"></script>
     <title>{{ page.title }}</title>
   </head>
   <body>
