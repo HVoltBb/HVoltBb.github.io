@@ -5,5 +5,5 @@ function pickAQuote(num=0){
 
 d = Date.now();
 var n = quotes_.length;
-// A simple linear conguential RNG that changes daily
+// A simple linear conguential RNG that changes every refresh
 pickAQuote((d*6+89)%n);

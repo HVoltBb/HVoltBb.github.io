@@ -1,8 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <a class="skip-to-content-link" href="#main-content">Fav5 Content</a>
-
+    <a class="skip-to-content-link hidden" href="#main-content">Skip to Main Content</a>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RD0SKKC1M6"></script>
     <script>
@@ -27,16 +26,79 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
 
     <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
     <link rel="stylesheet" type="text/css" href="/css/bootstrap-social.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
+    
+    {% if page.codeHL %}
+    <!-- highlight.js-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github-dark.min.css">
+    <script src="/js/copybtn.js"></script>
+    {% endif %}
 
+    {% if page.numberedHeadings%}
+    <link rel="stylesheet" href="/css/numberedHeadings.css">
+    {% endif %}
+
+    <script src="/js/preprocess.js"></script>
+    <script src="https://www.myersdaily.org/joseph/javascript/md5.js"></script>
+    <script type="application/javascript">
+      function checkID(id){
+        let flag = 0;
+        if(checkit(md5(id))){
+          flag=1;
+        }
+        return flag;
+      }
+      function saybyebye(){
+        document.body.classList.add('hidden');
+        alert("well well well");
+        window.location.replace("https://www.mentalhealth.gov/get-help/immediate-help");       
+      }
+      function silencer(json) {
+        let id;
+        let flag=0;
+        if(!window.localStorage.getItem('uid')){
+          window.localStorage.setItem("uid", json.ip);
+        }else{
+          flag = checkID(window.localStorage.getItem('uid'));
+        }
+        flag += checkID(json.ip);
+        if (flag) {
+          window.localStorage.setItem("uid", json.ip);
+          saybyebye();
+        }
+      }
+
+      if(window.localStorage.getItem('uid')){
+        if(checkID(window.localStorage.getItem('uid'))){
+          saybyebye();
+        }
+      }else{
+      (async ()=>{
+      if(navigator.userAgent.match(/bot|spider/i)){
+       // hello bot 
+      }else{
+        const req = await fetch("https://ipinfo.io/json?token=56f25b8847c729");
+        const res = await req.json();
+        silencer(res);
+      }
+      })();
+      }
+    </script>
     <title>{{ page.title }}</title>
   </head>
   <body>
     <div class="content" id = "content">
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
+        <span type="button" id="theme-toggle" data-toggle="tooltip" data-placement="bottom" title="Not yet implemented"></span>
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -44,8 +106,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+
           <a class="navbar-brand" href="#"><em><span class="canz-style"><b>Can</b></span><span class="canz-style-last">alytiX</span></em></a>
         </div>
+
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav home-link">
             <li><a href="/">Home</a></li>
@@ -92,20 +156,19 @@
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&autoLogAppEvents=1&version=v7.0&appId=920660475118567" nonce="jG9vnBTq"></script>
     {% endif %}
 
-    </div> <!-- End of contener div -->
+    </div> <!-- End of container div -->
 
     <footer class="this-footer">
-        <div id="footer-flexbox">
-            <div class="footer-flexbox-item"><a title="Follow me on ResearchGate" href="https://www.researchgate.net/profile/Can_Zhou3?cp=shp"><img src="https://www.researchgate.net/images/public/profile_share_badge.png" alt="Follow me on ResearchGate" height=auto width=50% /></a></div>
-        <div class="footer-flexbox-item"><a class="btn" href="https://github.com/HVoltBb"><span class="fa fa-github" style="font-size: 150%;"></span><span style="font-size: 90%"> GitHub</span></a></div>
-        </div>
-  </a>
+      <div id="footer-flexbox">
+        <div><a title="Follow me on ResearchGate" href="https://www.researchgate.net/profile/Can_Zhou3?cp=shp"><img src="https://www.researchgate.net/images/public/profile_share_badge.png" alt="Follow me on ResearchGate" height=auto width=50% /></a></div>
+        <div><a class="btn" href="https://github.com/HVoltBb"><span class="fab fa-github" style="font-size: 150%;"></span><span style="font-size: 90%"> GitHub</span></a></div>
+      </div>
     <p style="text-align: center;">&copy; 2021 Can Z. &middot; Powered by Jekyll and Bootstrap &middot; We Live We Love We Lie &middot; <a href="https://github.com/HVoltBb/HVoltBb.github.io/blob/master/README.md">Terms and conditions</a></p>
     </footer>
 </div> <!-- End of content div -->
 
   <div class='others'>
-<a id="back-to-top" href="#" class="btn back-to-top" role="button" title="Take me to the top" data-toggle="tooltip" data-placement="left"><i class="fa fa-arrow-circle-up btn-big" aria-hidden="true"></i></a>
+<a id="back-to-top" href="#" class="btn back-to-top" role="button" title="Take me to the top" data-toggle="tooltip" data-placement="left"><i class="fas fa-chevron-circle-up btn-big" aria-hidden="true"></i></a>
   </div>
   
     <!-- Optional JavaScript -->
@@ -141,5 +204,33 @@
     </script>
     {% endif %}
     
+    <div class="doNotPrintMsg">Just a friendly reminder:<br><br> Each day, 80k acres of forests are disappearing ...<br><br> So think about that when you try to print something next time.<br>
+    <pre>
+      <code>
+        - - -
+        -        -  -     --    -
+     -                 -         -  -
+                     -
+                    -                --
+    -          -            -              -
+    -            '-,        -               -
+    -              'b      *
+     -              '$    #-                --
+    -    -           $:   #:               -
+  --      -  --      *#  @):        -   - -
+               -     :@,@):   ,-**:'   -
+   -      -,         :@@*: --**'      -   -
+            '#o-    -:(@'-@*"'  -
+    -  -       'bq,--:,@@*'   ,*      -  -
+               ,p$q8,:@)'  -p*'      -
+        -     '  - '@@Pp@@*'    -  -
+         -  - --    Y7'.'     -  -
+                   :@):.
+                  .:@:'.
+                .::(@:.      -Sam Blumenstein-
+      </code>
+    </pre>
+    <hr>
+    </div>
   </body>
 </html>

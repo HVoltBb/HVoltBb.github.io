@@ -5,6 +5,7 @@ DoMath: false
 disqus-comments: true
 fb-comments: false
 describe: true
+codeHL: true
 description: Dynamicaly link Intel oneAPI Math Kernel Library (MKL) to R to make R run faster
 ---
 
@@ -23,16 +24,15 @@ description: Dynamicaly link Intel oneAPI Math Kernel Library (MKL) to R to make
 1. Check that your `R.HOME_DIR` variable in `R/bin/R` is correctly set.
 1. The MKL related environment variables need to be set every time you run R. Add the following lines to your `~/.bashrc` file.
 
-```bash
-    # Intel MKL oneAPI MKL
-    source /opt/intel/oneapi/mkl/latest/env/vars.sh
-    export MKL_INTERFACE_LAYER=GNU,LP64
-    export MKL_THREADING_LAYER=GNU
-```
+<div>
+<pre rel="bash"><button type="button" class="copy-button far fa-copy" aria-hidden="true"></button><span class="show copy-button-msg"></span><code class="language-bash"># Intel MKL oneAPI MKL
+source /opt/intel/oneapi/mkl/latest/env/vars.sh
+export MKL_INTERFACE_LAYER=GNU,LP64
+export MKL_THREADING_LAYER=GNU
+</code></pre>
+</div>
 
-<p>
-    To see whether this makes any difference, try benchmarking it (<a href="https://mac.r-project.org/benchmarks/">R-benchmark-25</a>). On my old 4th gen intel Core i7 laptop, MKL scored <b>4.8</b> secs while the default library scored <b>38</b> secs.
-</p>
-<p>
-    There has been a time when Intel intentionally crippled code generation on AMD processors. But I believe it is not the case now. At least it is not as obvious as it used to be, so if you have an AMD processor, feel free to upgrade as well.
-</p>
+To see whether this makes any difference, try benchmarking it (<a href="https://mac.r-project.org/benchmarks/">R-benchmark-25</a>). On my old 4th gen intel Core i7 laptop, MKL scored <b>4.8</b> secs while the default library scored <b>38</b> secs.
+
+There has been a time when Intel intentionally crippled code generation on AMD processors. But I believe it is not the case now. At least it is not as obvious as it used to be, so if you have an AMD processor, feel free to upgrade as well.
+
