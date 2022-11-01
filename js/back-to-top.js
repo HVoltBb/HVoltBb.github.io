@@ -17,4 +17,20 @@ $(document).ready(function(){
         
         $('#back-to-top').tooltip('show');
 
+        $('#theme-toggle').click(function(){
+            // Presumably a theme is already set after page load
+            const theme = localStorage.getItem('theme');
+            var root = document.documentElement;
+            var TSwitch = document.getElementById('theme-toggle'); 
+            if(theme === 'light-theme'){
+                root.setAttribute('class', 'dark-theme');
+                TSwitch.setAttribute('class', 'dark-mode-switch');
+                localStorage.setItem('theme', 'dark-theme');
+            }else{
+                root.setAttribute('class', 'light-theme');
+                TSwitch.setAttribute('class', 'light-mode-switch');
+                localStorage.setItem('theme', 'light-theme');
+            }
+        });
+
 });
