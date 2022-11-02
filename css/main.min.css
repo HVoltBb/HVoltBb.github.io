@@ -85,8 +85,7 @@ button.copy-button {
     background: url("/pics/external-link-alt-solid.svg") no-repeat top right/1rem;
     content: "";
     padding-left: 1.3rem;
-    -webkit-filter: opacity(70%);
-    filter: opacity(70%)
+    filter: brightness(var(--cvg-color-brightness));
 }
 
 @media screen {
@@ -130,7 +129,8 @@ button.copy-button {
     --accordion-button-background: white;
     --accordion-button-background-invert: #d2dce7;
     --accordion-button-border-color: #b2becd;
-    --sidebar-item-background: #d2dce7
+    --sidebar-item-background: #d2dce7;
+    --cvg-color-brightness: 0; 
 }
 
 .dark-theme {
@@ -143,7 +143,8 @@ button.copy-button {
     --accordion-button-background: #373c43;
     --accordion-button-background-invert: #13181c;
     --accordion-button-border-color: hsl(0deg, 0%, 86%);
-    --sidebar-item-background: #d2dce7
+    --sidebar-item-background: #d2dce7;
+    --cvg-color-brightness: 1;
 }
 
 
@@ -157,11 +158,6 @@ body {
     padding-bottom: 50px;
     min-height: 100vh;
     background-color: var(--body-background);
-    color: var(--text-color);
-}
-
-.jcolor{
-    background-color: var(--card-background);
     color: var(--text-color);
 }
 
@@ -386,4 +382,27 @@ nav.navbar {
     -webkit-transition: background-color 0.5s, border-color 0.5s;
     transition: background-color 0.5s, border-color 0.5s
 }
-/*# sourceMappingURL=main.min.css.map */
+
+.center-me{
+    margin:auto;
+    width: 60%;
+}
+
+div.well{
+    border-color: var(--card-background);
+    background-color: var(--card-background);
+    color: var(--text-color);
+}
+
+div.jumbotron{
+    background-color: var(--card-background);
+    color: var(--text-color);
+}
+
+div hr{
+    border-top-color: var(--card-background);
+}
+
+div.page-header{
+    border-bottom-color: var(--card-background);
+}

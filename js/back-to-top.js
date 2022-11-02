@@ -31,6 +31,11 @@ $(document).ready(function(){
                 TSwitch.setAttribute('class', 'light-mode-switch');
                 localStorage.setItem('theme', 'light-theme');
             }
+
+            // Create an event
+            const event = new Event('theme-change');
+            document.dispatchEvent(event);            
+            
         });
 
 });
