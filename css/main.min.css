@@ -129,7 +129,7 @@ button.copy-button {
     --accordion-button-background: white;
     --accordion-button-background-invert: #d2dce7;
     --accordion-button-border-color: #b2becd;
-    --sidebar-item-background: #d2dce7;
+    --item-background: #d2dce7;
     --cvg-color-brightness: 0; 
 }
 
@@ -143,7 +143,7 @@ button.copy-button {
     --accordion-button-background: #373c43;
     --accordion-button-background-invert: #13181c;
     --accordion-button-border-color: hsl(0deg, 0%, 86%);
-    --sidebar-item-background: #d2dce7;
+    --item-background: #d2dce7;
     --cvg-color-brightness: 1;
 }
 
@@ -405,4 +405,21 @@ div hr{
 
 div.page-header{
     border-bottom-color: var(--card-background);
+}
+
+table.table-striped > tbody > tr:nth-of-type(odd){
+    background-color: var(--body-background-2);
+}
+
+table > tbody {
+    background-color: var(--card-background);
+    color: var(--text-color);
+}
+
+table > thead {
+    background-color: var(--body-background-2);
+}
+
+div img {
+    background-color: var(--item-background);
 }
