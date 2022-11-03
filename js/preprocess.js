@@ -39,7 +39,7 @@ document.addEventListener('scroll', function(){
     lastScrollTop = currentScrollTop;
 
     // hide the flashing indicator
-    if (currentScrollTop > screen.height * 0.2){
+    if (currentScrollTop > window.innerHeight * 0.2){
         document.getElementById('flashingIcon').classList.add('hideMe');
     }else{
         document.getElementById('flashingIcon').classList.remove('hideMe');

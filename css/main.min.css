@@ -428,13 +428,14 @@ div > nav.navbar.nav-hidden {
 }
 
 #quote{
-    padding-top: 40vh;
+    padding-top: 30vh;
     height: 20vh;
 }
 
 #para{
     position:relative;
-    top: 20vh;
+    top: 35vh;
+    text-align: center;
 }
 
 #flashingIcon{
