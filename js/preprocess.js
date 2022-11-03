@@ -29,7 +29,7 @@ var lastScrollTop = 0;
 
 document.addEventListener('scroll', function(){
     var currentScrollTop = document.documentElement.scrollTop;
-    if (currentScrollTop > lastScrollTop){
+    if (currentScrollTop > window.innerHeight * 0.1 && currentScrollTop > lastScrollTop){
         //downscroll
         document.getElementById('nav').classList.add('nav-hidden');
     }else{
