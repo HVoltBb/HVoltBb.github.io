@@ -24,3 +24,24 @@ function checkISP(){
 }
 
 var checkit = checkISP();
+
+var lastScrollTop = 0;
+
+document.addEventListener('scroll', function(){
+    var currentScrollTop = document.documentElement.scrollTop;
+    if (currentScrollTop > lastScrollTop){
+        //downscroll
+        document.getElementById('nav').classList.add('nav-hidden');
+    }else{
+        //upscroll
+        document.getElementById('nav').classList.remove('nav-hidden');
+    }
+    lastScrollTop = currentScrollTop;
+
+    // hide the flashing indicator
+    if (currentScrollTop > screen.height * 0.2){
+        document.getElementById('flashingIcon').classList.add('hideMe');
+    }else{
+        document.getElementById('flashingIcon').classList.remove('hideMe');
+    }
+});

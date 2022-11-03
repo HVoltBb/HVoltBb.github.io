@@ -291,11 +291,6 @@ img[usemap] {
     transition: transform 300ms ease-in, -webkit-transform 300ms ease-in
 }
 
-.tag {
-    position: relative;
-    top: -50px
-}
-
 .wide-screen {
     max-width: 99%;
     max-height: 100vh
@@ -308,6 +303,8 @@ img[usemap] {
 
 .banner {
     position: relative;
+    margin-top: -80px;
+    height: 101vh;
     background-image: url("/pics/snow.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -374,13 +371,14 @@ img[usemap] {
     transition: background-color 0.5s, border-color 0.5s
 }
 
-nav.navbar {
-    border: 0 !important;
+div > nav.navbar {
+    border: 0;
     background-color: var(--navbar-background);
     color: var(--text-color);
     border-color: var(--body-background-2);
+    opacity: 1;
     -webkit-transition: background-color 0.5s, border-color 0.5s;
-    transition: background-color 0.5s, border-color 0.5s
+    transition: background-color 0.5s, border-color 0.5s, opacity 500ms;
 }
 
 .center-me{
@@ -422,4 +420,43 @@ table > thead {
 
 div img {
     background-color: var(--item-background);
+}
+
+div > nav.navbar.nav-hidden {
+    opacity: 0;
+    transition: opacity 500ms;
+}
+
+#quote{
+    padding-top: 40vh;
+    height: 20vh;
+}
+
+#para{
+    position:relative;
+    top: 20vh;
+}
+
+#flashingIcon{
+    position:relative;
+    top: 45vh;
+    text-align: center;
+    animation: flash 4s linear infinite;
+}
+
+@keyframes flash {
+    50% {
+        opacity: 0;
+    }
+}
+
+#flashingIcon::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: x-large;
+    content: "\f078"
+}
+
+.hideMe {
+    display:none;
 }
