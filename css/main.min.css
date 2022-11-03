@@ -155,7 +155,7 @@ html {
 }
 
 body {
-    padding-bottom: 50px;
+    margin-bottom: 84px;
     min-height: 100vh;
     background-color: var(--body-background);
     color: var(--text-color);

@@ -38,10 +38,12 @@ document.addEventListener('scroll', function(){
     }
     lastScrollTop = currentScrollTop;
 
-    // hide the flashing indicator
-    if (currentScrollTop > window.innerHeight * 0.2){
-        document.getElementById('flashingIcon').classList.add('hideMe');
-    }else{
-        document.getElementById('flashingIcon').classList.remove('hideMe');
+    // hide the flashing indicator on the homepage
+    if (window.location.pathname === '/' ){
+        if (currentScrollTop > window.innerHeight * 0.2){
+            document.getElementById('flashingIcon').classList.add('hideMe');
+        }else{
+            document.getElementById('flashingIcon').classList.remove('hideMe');
+        }
     }
 });
