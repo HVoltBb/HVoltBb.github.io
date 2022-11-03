@@ -303,8 +303,7 @@ img[usemap] {
 
 .banner {
     position: relative;
-    margin-top: -80px;
-    height: 101vh;
+    height: 100vh;
     background-image: url("/pics/snow.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -313,10 +312,6 @@ img[usemap] {
 
 .banner>p {
     color: white
-}
-
-.banner .some-v-space {
-    height: 5rem
 }
 
 .banner>figcaption {
@@ -428,7 +423,7 @@ div > nav.navbar.nav-hidden {
 }
 
 #quote{
-    padding-top: 30vh;
+    padding-top: 20vh;
     height: 20vh;
 }
 
