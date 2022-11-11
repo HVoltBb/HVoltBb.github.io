@@ -456,3 +456,15 @@ div > nav.navbar.nav-hidden {
 .hideMe {
     display:none;
 }
+
+div.notification{
+    background-color: lightseagreen;
+    position: fixed;
+    bottom:0%;
+    width:100%;
+    transition: all 500ms;
+    vertical-align: top;
+    padding: 0.2em 2em 0.2em 2em;
+    left:0%;
+    z-index: 2;
+}

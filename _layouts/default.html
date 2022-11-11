@@ -83,8 +83,8 @@
         }
       }else{
       (async ()=>{
-      if(navigator.userAgent.match(/bot|spider/i)){
-       // hello bot 
+      if(navigator.userAgent.match(/bot|spider/i) || (window.localStorage.getItem("optOut") && (Date.now()-window.localStorage.getItem("optOut"))<7*24*60*60*1000)){
+       // bot or opted out
       }else{
         const req = await fetch("https://ipinfo.io/json?token=56f25b8847c729");
         const res = await req.json();
