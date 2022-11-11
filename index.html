@@ -101,7 +101,10 @@ description: Advanced tools, data and blog posts on the analysis of natural and 
 <p>You can read more <a href="/about">about me</a>, and <a href="/random">my blog</a>. Commenting is enabled on my blog posts, and you can leave a comment there.</p>
 </div>
 
-<div class="notification hideMe" onload="showMe()" src="/js/indexPageNotification.js">
+<div class="notification hideMe">
+  <div style="position: relative; width: 100%;">
+    <a class="closeMe"></a>
+  </div>
   <span>Tracking is enabled on this site to improve user experience. Check the button to opt out of IP logging: </span>
   <button type="button" class="noTracking btn btn-default btn-xs">Hide my track for 7 days</button>
 </div>
@@ -112,8 +115,13 @@ description: Advanced tools, data and blog posts on the analysis of natural and 
     window.localStorage.setItem("optOut", Date.now());
 });
 
+  document.querySelector("div.notification a.closeMe").addEventListener('click', function(){
+    $("div.notification").addClass("hideMe");
+    window.localStorage.setItem("optIn", "y");
+  });
+
 (function(){
-        if(!window.localStorage.getItem("optOut")){
+        if(window.localStorage.getItem("optIn") !== "y" && ((!window.localStorage.getItem("optOut")) || ((Date.now()-parseInt(window.localStorage.getItem("optOut"))))>7*24*60*60*1000)){
             document.querySelector("div.notification").classList.remove("hideMe");
         }
 })();

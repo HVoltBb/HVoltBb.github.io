@@ -457,6 +457,25 @@ div > nav.navbar.nav-hidden {
     display:none;
 }
 
+a.closeMe{
+    position: absolute;
+    top:0px;
+    right:0px;
+    opacity: 0.8;
+}
+
+a.closeMe::before{
+    content: "X";
+}
+
+a.closeMe:hover{
+    opacity: 1;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
 div.notification{
     background-color: lightseagreen;
     position: fixed;
