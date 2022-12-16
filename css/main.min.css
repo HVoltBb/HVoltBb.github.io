@@ -302,12 +302,28 @@ img[usemap] {
 }
 
 .banner {
+    height: 100vh;
+    position: relative;
+    color: gold
+}
+
+.backgroundImg{
     position: relative;
     height: 100vh;
-    background-image: url("/pics/snow.jpg");
+}
+
+.backgroundImg::before{
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url("/pics/coast.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    color: gold
+    height: 100%;
+    width: 100%;
+    filter: grayscale(45%);
+    z-index: -1
 }
 
 .banner>p {
