@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Little Things
+title: Pesky Little Things
 DoMath: true
 disqus-comments: true
 fb-comments: false
