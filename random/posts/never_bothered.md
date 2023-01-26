@@ -23,29 +23,29 @@ There are simply way too many Xs there, don't you agree? I never quite understoo
 
 ### A vector in R is neither a column vector nor a row vector, rather it is an ordered list
 
-Here, let's consider two related terms: vector and list. What they mean depends heavily on context. In linear algebra, a vector(1) is a special matrix with a single row or column. In R, you create a zero column vector(1) of length `5` through
+Here, let's consider two related terms: vector and list. What they mean depends heavily on context. In linear algebra, a `vector(1)` is a special matrix with a single row or column. In R, you create a zero column `vector(1)` of length 5 through
 
 ```{r}
 vector1 <- matrix(0, ncol=1, nrow=5)
 ```
 
-In R, vector is a basic data type, called `atomic vectors` in the documentation. This is different from an R vector(2), which is an ordered collection of objects of the same type, but not a vector(1) and you can't do matrix operation on it. An R vector of `5` zeros is created through
+In R, vector is a basic data type, called _atomic vectors_ in the documentation. This R `vector(2)` is an ordered collection of objects of the same type, and not a `vector(1)` and you can't do any matrix operation on `vector(2)`. An R vector of 5 zeros can be created through
 
 ```{r}
 vector2 <- rep(0, 5)
 ```
 
- So, in R, a vector is a list, then what are lists in R? R documentation call their lists `generic vectors`, which contain objects of potentially different types. Of course, no one can stop you from creating a list of objects of the same type, which is exactly what I am going to do next. An R list of 5 zeros can be created as
+ So, in R, a vector is a list, then what are lists in R? R documentation calls their lists _generic vectors_, generic in the sense that they may contain objects of different types. Of course, no one can stop you from creating a list of objects of the same type, which is exactly what I am going to do next. An R list of 5 zeros can be created as
 
  ```{r}
-vector3 <- as.list(rep(0, 5))
+vector3 <- as.list(vector2)
  ```
 
-To add to your confusion, the R documentaton does say [rdoc][1]
+To add to your confusion, the [R documentaton][1] does say 
 
 > Lists are vectors, ...
 
-To make your R experience less frustrating, pay close attention to what the argument/return type of a function is and act accordingly. 
+To make your R experience less frustrating, don't ever read their documentation and pay close attention to what the argument/return type of a function is in the help page and act accordingly. 
 
 
 
