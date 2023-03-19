@@ -47,3 +47,9 @@ document.addEventListener('scroll', function(){
         }
     }
 });
+
+// Fill copyright year
+function copyrightTXT(){
+    var today = new Date();
+    document.getElementById('copyright').innerHTML = '&copy; ' + today.getFullYear() + ' Can Z. &middot; Powered by Jekyll and Bootstrap &middot; We Live We Love We Lie &middot; <a href="https://github.com/HVoltBb/HVoltBb.github.io/blob/master/README.md">Terms and conditions</a>';
+}
