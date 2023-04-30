@@ -18,12 +18,8 @@ pics/book_*
 scss/
 ts/
 
-# Believe me you don't want to get on this list
-# Once you are on, there is no going back
-# My script will pay you a visit periodically
-# Oh, I don't view this list of shitty shits
-good_bad.html
-hit_list*
+# locals
+local_*
 
-# My personal notebooks
-secret_*
+# Misc
+good_bad.html

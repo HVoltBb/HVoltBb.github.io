@@ -1,16 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RD0SKKC1M6"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-RD0SKKC1M6');
-    </script>
-
+    {%- include google-analytics.html -%}
     <!-- Required meta tags -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -96,98 +87,30 @@
     <title>{{ page.title }}</title>
   </head>
   <body>
-    <script>
-      const theme = localStorage.getItem('theme') || 'light-theme';
-      document.documentElement.className = theme;
-    </script>
+    <!-- Concent start-->
     <div class="content" id = "content">
-    <nav id= "nav" class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <span type="button" id="theme-toggle" class= "dark-mode-switch" data-toggle="tooltip" data-placement="bottom" title="Not yet implemented"></span>
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-
-          <a class="navbar-brand" href="#"><em><span class="canz-style"><b>Can</b></span><span class="canz-style-last">alytiX</span></em></a>
-        </div>
-
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav home-link">
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/data">Data <span class="badge">5</span></a></li>
-            <li><a href="/projects">Projects <span class="badge">5+</span></a></li>
-            <li><a href="/random">Other Lives <span class="badge">1+</span></a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-    <script>
-      document.getElementById('theme-toggle').setAttribute('class', theme.split('-')[0]+'-mode-switch');
-      </script>
-
+    {%- include nav.html -%}
+    <!-- Container start -->
     <div class="container">
-        {{ content }}
-<!--
-<div style="height: 2000px; border: solid 2px red;"></div>
--->
+    {{ content }}
     {% if page.disqus-comments %}
-        <div id="disqus_thread"></div>
-    <script>
-
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-
-    var disqus_config = function () {
-    this.page.url = "{{site.url}}{{page.url}}";  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = "{{page.uiv}}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://hvoltbb.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-
-    // Theme change reload
-    document.addEventListener('theme-change', function(e){
-      if(document.readyState === 'complete'){
-        DISQUS.reset({reload: true, config: disqus_config});
-      }
-    });
-    </script>
-    <script id="dsq-count-scr" src="//hvoltbb.disqus.com/count.js" async></script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>               
+    {%- include disqus_comments.html -%}
     {% endif %}
-
     {% if page.fb-comments %}
-    <div class="fb-comments" data-href="{{site.url}}{{page.url}}" data-numposts="10" data-width=""></div>
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&autoLogAppEvents=1&version=v7.0&appId=920660475118567" nonce="jG9vnBTq"></script>
+    {%- include facebook_comments.html -%}
     {% endif %}
+    </div>
+    <!-- Container end -->
+    {%- include footer.html -%}
+    </div>
+    <!-- Content end -->
 
-    </div> <!-- End of container div -->
-
-    <footer class="this-footer">
-      <div id="footer-flexbox">
-        <div><a title="Follow me on ResearchGate" href="https://www.researchgate.net/profile/Can_Zhou3?cp=shp"><img src="https://www.researchgate.net/images/public/profile_share_badge.png" alt="Follow me on ResearchGate" height=auto width=50% /></a></div>
-        <div><a class="btn" href="https://github.com/HVoltBb"><span class="fab fa-github" style="font-size: 150%;"></span><span style="font-size: 90%"> GitHub</span></a></div>
+    <script>
+      copyrightTXT();
+    </script>
+      <div class='others'>
+    <a id="back-to-top" href="#" class="btn back-to-top" role="button" title="Take me to the top" data-toggle="tooltip" data-placement="left"><i class="fas fa-chevron-circle-up btn-big" aria-hidden="true"></i></a>
       </div>
-    <p style="text-align: center;" id="copyright"></p>
-    </footer>
-</div> <!-- End of content div -->
-<script>
-  copyrightTXT();
-</script>
-  <div class='others'>
-<a id="back-to-top" href="#" class="btn back-to-top" role="button" title="Take me to the top" data-toggle="tooltip" data-placement="left"><i class="fas fa-chevron-circle-up btn-big" aria-hidden="true"></i></a>
-  </div>
   
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -197,13 +120,11 @@
     <script type="text/javascript" src="/js/back-to-top.js" async></script>
     <script type="text/javascript" src="/js/util.js" async></script>
     {% if page.DoMath %}
-    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    {%- include MathJax.html -%}
     {% endif%}
 
     {% if page.pdf %}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.5.207/pdf.js" type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.5.207/pdf.worker.js" type="text/javascript"></script>
-    <script src="/js/simple-pdf.js"></script>
+    {%- include simple-pdf.html -%}
     {% endif %}
 
     {% if page.deselect %}
@@ -221,33 +142,6 @@
     </script>
     {% endif %}
     
-    <div class="doNotPrintMsg">Just a friendly reminder:<br><br> Each day, 80k acres of forests are disappearing ...<br><br> So think about that when you try to print something next time.<br>
-    <pre>
-      <code>
-        - - -
-        -        -  -     --    -
-     -                 -         -  -
-                     -
-                    -                --
-    -          -            -              -
-    -            '-,        -               -
-    -              'b      *
-     -              '$    #-                --
-    -    -           $:   #:               -
-  --      -  --      *#  @):        -   - -
-               -     :@,@):   ,-**:'   -
-   -      -,         :@@*: --**'      -   -
-            '#o-    -:(@'-@*"'  -
-    -  -       'bq,--:,@@*'   ,*      -  -
-               ,p$q8,:@)'  -p*'      -
-        -     '  - '@@Pp@@*'    -  -
-         -  - --    Y7'.'     -  -
-                   :@):.
-                  .:@:'.
-                .::(@:.      -Sam Blumenstein-
-      </code>
-    </pre>
-    <hr>
-    </div>
+    {%- include doNotPrint.html -%}
   </body>
 </html>

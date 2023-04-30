@@ -1,0 +1,32 @@
+<script>
+    const theme = localStorage.getItem('theme') || 'light-theme';
+    document.documentElement.className = theme;
+  </script>
+  <nav id= "nav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <span type="button" id="theme-toggle" class= "dark-mode-switch" data-toggle="tooltip" data-placement="bottom" title="Dark/Light"></span>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a class="navbar-brand" href="#"><em><span class="canz-style"><b>Can</b></span><span class="canz-style-last">alytiX</span></em></a>
+      </div>
+
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav home-link">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/data">Data <span class="badge">5</span></a></li>
+          <li><a href="/projects">Projects <span class="badge">5+</span></a></li>
+          <li><a href="/random">Other Lives <span class="badge">1+</span></a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+  <script>
+    document.getElementById('theme-toggle').setAttribute('class', theme.split('-')[0]+'-mode-switch');
+  </script>
